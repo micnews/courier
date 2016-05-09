@@ -1,0 +1,6 @@
+node_modules
+.DS_STORE
+config.json
+build
+npm-debug.log
+.idea
