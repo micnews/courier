@@ -3,6 +3,7 @@ import { prettyPrint } from 'html';
 import mailchimpify from 'mailchimpify';
 import assert from 'assert';
 import { injectReactEmailAttributes, renderEmail } from 'react-html-email';
+import mailchimpIntegration from './integrations/mailchimp';
 
 injectReactEmailAttributes();
 
@@ -38,6 +39,7 @@ export default (opts) => {
       const html = renderHtml(template(props));
 
       stream.once('open', () => stream.end(html));
-    }
+    },
+    mailchimp: (config, data) => mailchimpIntegration(config, data)
   };
 };
