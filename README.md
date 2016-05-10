@@ -1,5 +1,5 @@
 # courier
-Render and send component based emails easily with `react-html-email` and Mailchimp on the server.
+Create  email components with React / [react-html-email](https://github.com/chromakode/react-html-email) and send them to Mailchimp on the server.
 
 ## Installation
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
@@ -32,7 +32,7 @@ const allTemplates = {
 
 const { render, templateNames } = courier({ allTemplates });
 const templateProps = {};
-
+templateNames(); // returns a string of your template names
 render('myTemplate', templateProps); // returns an HTML string with your props and `mc:edit` attribute
 ```
 
