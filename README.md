@@ -13,8 +13,7 @@ npm install courier-js --save
 ```js
 import courier from 'courier';
 import React from 'react';
-import { Email, Box } from 'react-html-email';
-const action = process.argv[2];
+import { Email, Item, Span } from 'react-html-email';
 
 const template = () => (
     <Email title='My Sexy Email'>
@@ -42,7 +41,7 @@ render('myTemplate', templateProps); // returns an HTML string with your props a
 ```js
 import courier from 'courier';
 import React from 'react';
-import { Email, Box } from 'react-html-email';
+import { Email, Item, Span } from 'react-html-email';
 const action = process.argv[2];
 
 const template = () => (
@@ -73,7 +72,7 @@ compile('myTemplate', templateProps, dir); // renders your template inside `dir`
 ```js
 import courier from 'courier';
 import React from 'react';
-import { Email, Box } from 'react-html-email';
+import { Email, Item, Span } from 'react-html-email';
 const action = process.argv[2];
 
 const template = () => (
