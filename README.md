@@ -9,7 +9,7 @@ npm install courier-js --save
 ```
 
 ## Render Usage
-
+Render and return an HTML string from your email component.
 ```js
 import courier from 'courier';
 import React from 'react';
@@ -37,7 +37,7 @@ render('myTemplate', templateProps); // returns an HTML string with your props a
 ```
 
 ## Compile to HTML file
-
+Compile your email component to an HTML file and the directory of your choice.
 ```js
 import courier from 'courier';
 import React from 'react';
@@ -68,7 +68,7 @@ compile('myTemplate', templateProps, dir); // renders your template inside `dir`
 ```
 
 ## Render to Mailchimp Campaign
-
+Update a Mailchimp template and send a campaign based on your email component.
 ```js
 import courier from 'courier';
 import React from 'react';
