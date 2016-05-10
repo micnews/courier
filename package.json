@@ -2,7 +2,7 @@
   "name": "courier",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "mkdir -p build && babel -d build/ src/",
     "compile": "npm run build && node build/index compile",
