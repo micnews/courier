@@ -35,11 +35,6 @@ const { render, templateNames } = courier({ allTemplates });
 const templateProps = {};
 
 render('myTemplate', templateProps); // returns an HTML string with your props and `mc:edit` attribute
-if (action && action === 'compile') {
-    const templateProps = {};
-    const dir = __dirname;
-    compile('myTemplate', templateProps, dir); // renders to `dir` with template's `fileName`
-}
 ```
 
 ## Compile to HTML file
