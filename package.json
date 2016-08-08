@@ -36,6 +36,6 @@
     "mailchimpify": "^0.1.2",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
-    "react-html-email": "micnews/react-html-email"
+    "react-html-email": "^1.1.2"
   }
 }
