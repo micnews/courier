@@ -1,7 +1,7 @@
 import test from 'tape';
 import courier from '../src/index';
 import React from 'react';
-import { Item, Email, Span } from 'react-html-email';
+import { Item, Email, Span } from '@mic/react-html-email';
 
 test('throw without opts', (t) => {
   const message = 'Should throw if no opts passed in';
@@ -149,4 +149,3 @@ test(`render should return a transformed mc:data string`, (t) => {
   t.equal(render('myTemplate'), html);
   t.end();
 });
-
