@@ -2,7 +2,7 @@ import { createWriteStream } from 'fs';
 import { prettyPrint } from 'html';
 import mailchimpify from 'mailchimpify';
 import assert from 'assert';
-import { injectReactEmailAttributes, renderEmail } from 'react-html-email';
+import { injectReactEmailAttributes, renderEmail } from '@mic/react-html-email';
 import mailchimpIntegration from './integrations/mailchimp';
 
 injectReactEmailAttributes();
